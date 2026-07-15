@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  /* Başlangıç (Dark) Değerleri */
+  --ana-arka-plan: #111;
+  --panel-arka-plan: #1b1b1b;
+  --ana-yazi: #eaeaea;
+  --baslik-rengi: #ffffff;
+  --zoktay-mavisi: #002147;
+}
+
+/* Değişkenleri buraya bağladık */
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--ana-arka-plan);
+  color: var(--ana-yazi);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s; /* Renklerin yumuşak değişmesi için */
+}
+
+header, section {
+  background: var(--panel-arka-plan);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+h1, h2, h3 {
+  color: var(--baslik-rengi);
+}
+
+a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+    
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 4px 0;
+}
+button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
